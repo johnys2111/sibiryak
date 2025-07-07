@@ -3,87 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <h1>СИБИРЯК</h1>
+  <title>СИБИРЯК Барбершоп</title>
   <style>
-    body {
-      margin: 0;
-      font-family: "Arial", sans-serif;
-      background-color: #111;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+    /* Общий стиль */
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Montserrat',sans-serif;background:#000;color:#fff;}
+    a{color:#fff;text-decoration:none;}
+    section{padding:60px 20px;}
+    .container{max-width:960px;margin:auto;}
 
-    header {
-      background-color: #000;
-      padding: 20px;
-      text-align: center;
-      font-size: 32px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
+    /* Hero */
+    .hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:#000;}
+    .hero h1{font-size:4rem;letter-spacing:4px;margin-bottom:10px;}
+    .hero p{font-size:1.2rem;color:#aaa;margin-bottom:30px;}
+    .btn{padding:14px 30px;background:#fff;color:#000;font-weight:bold;border-radius:4px;transition:background .3s;}
+    .btn:hover{background:#ccc;}
 
-    .hero {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
-      text-align: center;
-    }
+    /* Gallery */
+    .gallery{background:#111;}
+    .gallery h2{margin-bottom:20px;font-size:2rem;text-align:center;}
+    .gallery .images{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+    .gallery img{width:300px;height:200px;object-fit:cover;border-radius:4px;}
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
+    /* About/services */
+    .about{background:#000;}
+    .about h2{font-size:2rem;margin-bottom:20px;text-align:center;}
+    .about p{max-width:800px;margin:0 auto;font-size:1.1rem;color:#ccc;line-height:1.6;}
 
-    .hero p {
-      font-size: 18px;
-      max-width: 600px;
-    }
+    /* Contacts */
+    .contact{background:#111;}
+    .contact h2{font-size:2rem;margin-bottom:20px;text-align:center;}
+    .contact p{font-size:1.1rem;text-align:center;color:#aaa;}
+    .map iframe{width:100%;height:300px;border:0;border-radius:4px;}
 
-    .btn {
-      margin-top: 30px;
-      padding: 14px 32px;
-      background-color: #fff;
-      color: #000;
-      text-transform: uppercase;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #333;
-      color: #fff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      background-color: #000;
-    }
+    /* Footer */
+    footer{padding:20px;text-align:center;font-size:0.9rem;background:#000;color:#555;}
   </style>
 </head>
 <body>
-  <header>
-    SIBIRYAK
-  </header>
-
   <section class="hero">
-    <h1>Мужская территория</h1>
-    <p>Мы делаем не просто стрижки — мы создаём стиль. Приходи за атмосферой и индивидуальностью.</p>
-    <a href="https://t.me/your_barbershop_bot" class="btn">Записаться</a>
+    <h1>СИБИРЯК</h1>
+    <p>Освежи свою голову сибирским стилем</p>
+    <a href="#" class="btn">Записаться</a>
+  </section>
+
+  <section class="gallery container">
+    <h2>Наши работы</h2>
+    <div class="images">
+      <img src="photo1.jpg" alt="">
+      <img src="photo2.jpg" alt="">
+      <img src="photo3.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="about container">
+    <h2>О нас</h2>
+    <p>Мы — барбершоп сибирского стиля. Стрижки, бороды, атмосфера. Всё по-мужски, с чувством и характером.</p>
+  </section>
+
+  <section class="contact container">
+    <h2>Контакты</h2>
+    <p>Чита, ул. Балябина 16</p>
+    <div class="map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A74943f65..."></iframe>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Sibiryak Barbershop. Все права защищены.
+    &copy; 2025 СИБИРЯК Барбершоп
   </footer>
 </body>
 </html>
+
 
